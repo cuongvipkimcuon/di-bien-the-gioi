@@ -25,7 +25,8 @@ type: project
 - Authenticated remote URL: https://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@github.com/cuongvipkimcuon/di-bien-the-gioi.git
 
 **How to apply:**
-1. Đầu mỗi session, kiểm tra workspace có file chưa. Nếu chưa có → clone: `git clone https://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@github.com/cuongvipkimcuon/di-bien-the-gioi.git`
-2. Nếu repo đã clone nhưng chưa có remote với token → set lại: `git remote set-url origin <authenticated remote URL>`
-3. Sau khi chỉnh sửa → commit và push lên GitHub.
-4. Nếu token hết hạn (sau ~2026-04-23), nhắc Cuong cung cấp token mới rồi cập nhật memory.
+1. Đầu mỗi session: chạy `git pull origin main` trong workspace để lấy bản mới nhất từ GitHub.
+   - Nếu workspace chưa có git repo → chạy: `git clone https://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@github.com/cuongvipkimcuon/di-bien-the-gioi.git .` (dấu chấm ở cuối để clone vào thư mục hiện tại)
+   - Sau khi clone, set git config: `git config user.name "cuongvipkimcuon"` và `git config user.email "daochicuong12a1@gmail.com"`
+2. Sau khi chỉnh sửa → `git add`, `git commit`, `git push origin main`.
+3. Nếu token hết hạn (sau ~2026-04-23), nhắc Cuong cung cấp token mới rồi cập nhật memory.
