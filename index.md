@@ -5,6 +5,9 @@
 
 ---
 
+
+## Arc 1 — Nhập Học (Ch.001-014)
+
 Ch.001 | Cường | Bệnh viện → Trường Xà Cừ | Cường chuyển sinh về 2013, khám phá thế giới có Gift/Quỷ, biết mình là "Vô Lực". Giới thiệu Nghĩa (Gift [Sáng Tạo]), bố Xuyên, mẹ Tâm.
 Ch.002 | Cường, Nghĩa | Trường Xà Cừ (lớp 10C10) | Hai anh em nhầm vào lớp cá biệt. Cường lần đầu vô tình kích hoạt khả năng phá Gift (khói đen). Thể thuật của Cường bản năng tự nổi.
 Ch.003 | Cường, Nghĩa, bà Tâm | Sân trường | Hậu trận lớp C10. Cường băn khoăn về "khói đen". Bạn cũ (Hiếu, Oanh, Trúc, Hồng) tái ngộ. Học theo hệ Gift hoặc Saint. Cường cảm nhận mùi hương bí ẩn của cô gái kiếp trước.
@@ -19,6 +22,9 @@ Ch.011 | Cường, Mộc Thảo, Tuyết Nhi | Đường phố → Sân trườn
 Ch.012 | Cường, Nhã Uyên, Mộc Thảo | Thư viện trường | **Hoàng Nhã Uyên** chuyển vào 10C1 — con nuôi chủ tịch Tập đoàn Hoàng Gia (HG Group). Từng là "Mama" trong trò chơi gia đình với Cường-nguyên-bản hồi tiểu học. Cường phục hồi ký ức đó. Mộc Thảo có phản ứng sợ hãi/căm ghét với Nhã Uyên.
 Ch.013 | Cường, Mộc Thảo, Nhã Uyên, Kim Nguyên | Quán nước, trường học (20/11) | Cường lơ Hội Liên Minh để theo Nhã Uyên. Bị bắt gặp "đi chơi cùng Uyên". Ngày 20/11: Uyên tố Thảo cắt váy kỷ vật mẹ. Cường tin Uyên, Thảo tát Cường. Thảo dùng [Hồi Phục] sửa váy rách đến kiệt sức để chứng minh sự trong sạch → bất tỉnh. Nghĩa xác nhận Thảo vô tội bằng [Sự Thật]. Khang đấm Cường.
 Ch.014 | Cường, Hội Liên Minh, Nhã Uyên, Tuyết Nhi, Ingah | Trường + biệt thự HG | Phong [Lưu Trữ Ký Ức] chiếu lại ký ức → kẻ giả mạo hình dạng Thảo. Kẻ địch đang gài bẫy. Buổi lễ: Cường xin lỗi Thảo, bị Tuyết Nhi chặn đường → cảnh báo lãnh địa. **Ingah** (người thừa kế HG, ông chủ thật sự của Nhã Uyên) lộ diện. Nhã Uyên báo cáo Tuyết Nhi có sức mạnh ngang Đại Quỷ Vương.
+
+## Arc 2 — Hồn Giới (Ch.015-028)
+
 Ch.015 | Cường, Mộc Thảo, nhóm 10C1 | Đầm Sen Nước (21/12) | Sinh nhật Đức. Đức bao cả lớp đi Đầm Sen Nước. Nghĩa có thêm Gift **[Dịch Chuyển]**. Đức "lộ hàng" trước đám đông → bị bắt. Tuyết Nhi tiếp tục cư xử ma mị với Cường.
 Ch.016 | Cường, Đức, Mộc Thảo, Tuyết Nhi | Đầm Sen Nước | Nhóm thay đồ ngoài trời. Đức lộ hàng do lấy nhầm ba lô. Tuyết Nhi trượt chân, Cường cứu. Mộc Thảo chứng kiến, bực dọc.
 Ch.017 | Cường, Mộc Thảo, Tuyết Nhi | Đầm Sen (Dòng Sông Lười) | Tuyết Nhi cảnh báo Cường không được "bắt cá hai tay". Cường hòa giải được với Mộc Thảo (nhân vụ hai gã trai quấy rối Thảo). Cường nhận cứ "đèn đỏ" mà bị Thảo tát lần thứ N.
@@ -33,6 +39,9 @@ Ch.025 | Mộc Thảo, các mảnh hồn Cường | Hồn Giới | Thảo lần 
 Ch.026 | Mộc Thảo, Tham Lam (hồn Cường) | Hồn Giới | **REVEAL LỚN**: Mảnh **Tham Lam** tiết lộ — Cường vốn được Đức Thần trao Gift [Sáng Tạo] nhưng đã tự nguyện nhường cho Nghĩa lúc sinh ra để cứu Nghĩa khỏi ngạt thở. Đây là lý do Cường "Vô Lực".
 Ch.027 | Mộc Thảo, các mảnh hồn Cường | Hồn Giới | Thảo tiếp tục hành trình thuyết phục các mảnh hồn hợp nhất. Các mảnh dần chấp nhận Thảo sau khi nghe cô nói về tình cảm thật sự dành cho Cường.
 Ch.028 | Mộc Thảo, Cường-hồn | Hồn Giới → thực tế | Thảo hấp thụ **"biến thể ác tính"** (vật chất đen) từ hồn Cường — sẽ giết chết cô từ từ trừ khi tình yêu của Cường chữa lành. Thảo hôn mảnh hồn Cường; các hồn hợp nhất; Cường hồi sinh.
+
+## Arc 3 — Yêu Nhau (Ch.029-053)
+
 Ch.029 | Cường, Mộc Thảo, Ông Biên, Nghĩa | Bệnh viện → Xe buýt → Nhà | Cường tỉnh lại (Thảo khóc). Ông Biên hoảng loạn vì video Đầm Sen lan viral. **Tiểu Đội X** thành lập. Trên xe buýt: Thảo ngủ gục trên vai Cường. Về nhà: **Ông Xuyên đánh Cường dã man bằng gậy**.
 Ch.030 | Cường, Ông Xuyên, Thu Quỳnh | Nhà | **Thu Quỳnh** (chị cả, con nuôi Ông Xuyên) lao vào chặn Ông Xuyên đang sắp giết Cường. Ông Xuyên để lại lọ thuốc rồi bỏ đi. Cường bê bết máu.
 Ch.031 | Cường, Bà Tâm, Thu Quỳnh | Nhà → Trụ sở tình báo | Bà Tâm tiết lộ: Ông Xuyên = Đại tá Lưu Văn Xuyên (Cục Tình Báo TW), từng quỳ 3 ngày tại Phủ Chủ Tịch để cứu Cường khỏi lệnh xử tử. Điều kiện: Cường gây rắc rối → thi hành án. Huyết Dược Đặc Chủng = thuốc cấp S. Cường chính thức gia nhập **Tiểu Đội X**.
@@ -58,6 +67,9 @@ Ch.050 | Cường, Mộc Thảo, Trương Quốc Huy | Đường phố + Mưa | 
 Ch.051 | Cường, Mộc Thảo, Trương Quốc Huy | Đường phố | Cường lần đầu gọi tên **[VÔ]** — khói đen vô hiệu hóa [Thôi Miên] kiểm soát Thảo. **[VÔ]** = "Vô hiệu hóa" mọi Gift/ma thuật đang tác động vào mục tiêu. Cường đấm gục Quốc Huy. Trên xe về: Thảo gục đầu lên vai Cường.
 Ch.052 | Cường, Mộc Thảo | Xe hơi bên đường | Lời nguyền Tham Lam kích hoạt sớm do [VÔ] làm suy yếu cơ thể Thảo — cô "chết" trong tay Cường. Cường thú nhận tình yêu thật sự và hôn Thảo → phép màu: Thảo hồi sinh. Cường chính thức từ bỏ Nhã Uyên, dành trọn trái tim cho Thảo.
 Ch.053 | Cường, Mộc Thảo | Quán trà sữa (28/12/2013 13:15) | Thảo thức dậy khỏe mạnh. Cường đổi trạng thái FB "Đang hẹn hò". Tại quán: Cường chính thức tỏ tình, tặng **nhẫn đôi bạc khắc tim**. Thảo đồng ý, đeo nhẫn, chủ động hôn lại — hai người chính thức yêu nhau.
+
+## Arc 4 — Anh Hùng Chiến (Ch.054-074)
+
 Ch.054 | Cường, Mộc Thảo, Nhã Uyên, Kim Nguyên | Lớp 10C1 (05/01/2014) | Cả lớp biết Cường-Thảo hẹn hò. Nhã Uyên tấn công Kim Nguyên bằng [Thánh Quang]. Cường ngăn lại. Uyên rút lui. **Cuộc thi Anh Hùng Chiến** toàn quốc: vòng sơ loại cấp trường ngày 10/3, đội 5 người.
 Ch.055 | Cường, Nhã Uyên | Sân thượng | Cường nói thẳng: "Anh yêu Mộc Thảo". Nhã Uyên suy sụp, thề trả thù Thảo. Cường cảnh báo: dám đụng đến Thảo → không tha. Nhã Uyên gào khóc, đuổi Cường đi.
 Ch.056 | Mộc Thảo, Nhã Uyên, Kim Nguyên | Lớp 10C1 (1 tuần sau) | Nhã Uyên trở lại với tóc ngắn — cắt đứt quá khứ. Xin lỗi Kim Nguyên + đề nghị Thảo làm hòa. Lịch sử: mẹ Thảo và mẹ Uyên là **song sinh**; Mộc Long từng bảo vệ cả hai; Uyên phản bội → Mộc Long chết. Uyên thì thầm đề nghị Thảo **hợp tác** chống Phan gia — bị thầy cắt ngang.
@@ -79,6 +91,9 @@ Ch.071 | Cường, Mộc Thảo, Tuyết Nhi, Ngọc Lan | Căn hộ Ngọc Lan 
 Ch.072 | Tuyết Nhi, Ngọc Lan | Ban công căn hộ | Tuyết Nhi suy luận đúng (Kim Giáp ≠ diệt quỷ tự phát). Ngọc Lan không xác nhận. Tuyết Nhi phát hiện Ngọc Lan **có tình cảm với Cường** → nhắc nhở: Cường+Thảo rất khắng khít, không có chỗ thứ ba. Lore: Ngọc Lan được Tuyết Nhi gọi là "cô bé [Kiến Tạo Quái Vật]" — ý nghĩa chưa rõ.
 Ch.073 | Phan Sơn, Quốc Thanh, Dương Tính, Ingah | Biệt phủ Phan thị + tháp Hoàng Gia | Phan Sơn truy vấn về vụ đột nhập; quyết định **vu cáo Tân Việt** cho truyền thông. "Nhân tố A" = Đỗ Duy Nhất (bí danh nội bộ). Ingah xem tin tức, ấn tượng với kẻ vượt qua Quốc Thanh, đang toan tính.
 Ch.074 | Ông Biên, Cường, Ngọc Lan | Trụ sở Tiểu Đội X | Ông Biên xác nhận vụ được dàn xếp xong. Lore Chủ Công Heart/Cơ: Phan Sơn = **Red Joker**; Dương Tính = **King Heart**; Hương Thủy = **Queen Heart** ("Nữ hoàng đạo lý"); Quốc Thanh = **Ace Heart** (lên từ Jack Heart). **Ngọc Lan được phong Queen Spade**. Nhiệm vụ mới: Cường + ba đi xe giường nằm Bắc-Nam ngày 10/1 điều tra mất tích bí ẩn. Nếu thành công: ba = King Spade, Cường = Jack Spade.
+
+## Arc 5 — Tân Việt Xuất Hiện (Ch.075-093)
+
 Ch.075 | Cường, Đức, Hội 10C1 | Nhà Phong "đại gia" | Hội lớp 10C1 tụ tại nhà Phong (đại gia trong lớp, Gift [Trình Diễn Kí Ức]). Đức lần ra manh mối: cựu lớp trưởng Thúy Vy có thể bị thủ tiêu (kẹp tóc Limited của Hoàng Gia, Gift [Truy Vết] cấp 5 không tìm được xác). Nghi vấn: **Nhã Uyên** liên quan bắt nạt + cái chết Thúy Vy, làm theo lệnh Hoàng Gia. Cường bán tin bán ngờ.
 Ch.076 | Cường, Nghĩa, Đức, Phong, Tuyết Nhi | Nhà Phong (đêm tiệc nhậu) | Hội 10C1 nhậu; Nghĩa tuyên bố thích Tuyết Nhi trước mặt nhóm; Phong đau lòng vì Tư Huyền (tiếp viên hàng không); Cường gọi Ngọc Lan — Lan ám chỉ tình cảm nhưng khéo léo từ chối; Cường nhớ thế giới cũ.
 Ch.077 | Cường, Tuyết Nhi, Đức, Nghĩa | Nhà Phong | Cường gọi Tuyết Nhi "test" tình cảm hộ Nghĩa; Nhi từ chối xác nhận khéo léo; Đức suýt gọi nhầm Nhã Uyên.
@@ -98,6 +113,9 @@ Ch.090 | Cường, Mộc Thảo, Ông Hiền, Bà Nga, Bé Vy | Nhà Mộc Thả
 Ch.091 | Cường, Mộc Thảo, Benny Chương | Cổng trường (sáng 05/01/2014) | Benny Chương "Thợ Săn Tàn Nhẫn" (Giáp Vàng, Chính Quyền Duy Nhất) phục kích cổng trường. Mộc Thảo kích hoạt [Kết Nối Sinh Mệnh] (tầng cao nhất [Hồi Phục]) — chữa trị từ xa realtime, Cường trở nên bất tử tạm thời. Cường dùng Thôi Sơn Quyền toàn lực hạ Benny. Benny phản công bằng [Triệu Hồi]-Hắc Khuyển (chó quái 3 đầu) nhắm Mộc Thảo. Thảo kiệt sức.
 Ch.092 | Cường, Mộc Thảo, Benny Chương | Cổng trường | Cường dùng [VÔ] tiêu diệt Hắc Khuyển + bào mòn ma lực Benny. [VÔ] không khắc chế được Giáp Saint vật lý — Benny phản công cận chiến, đánh Cường ngã chí mạng. Mộc Thảo kiệt sức Gift nhưng vẫn từ chối chạy, chiến đấu cận chiến cùng Cường. Benny giơ kiếm kết liễu Cường.
 Ch.093 | Cường, Mộc Thảo, Nhã Uyên, Benny Chương, Tuyết Nhi | Cổng trường → cánh đồng ngoại ô | Nhã Uyên xuất hiện kịp thời với [Thánh Quang] — ngàn ngọn thương ánh sáng, bắn xuyên chân Benny; tự giới thiệu là con nuôi Hoàng Gia + cháu thứ 5 Phan Thị. Nhã Uyên dùng [Thánh Quang]-Chữa Trị cứu Cường; Mộc Thảo và Nhã Uyên hòa giải. Benny bỏ trốn, báo cáo thất bại. Tuyết Nhi truy theo, bẫy Benny vào không gian trắng (lồng thứ 2 sau Lisa Phạm).
+
+## Arc 6 — Doanh Trại (Ch.094-112)
+
 Ch.094 | Cường, Ngọc Lan, Thầy Sĩ, Thầy Ba, Tứ Hổ | Phòng giáo vụ | Ngọc Lan "ngụy tạo" hiện trường thành vụ bắt ma túy; hứa gửi Giáp Bạc mới thay Giáp Sắt nát; Cường từ chối để người khác bảo vệ Mộc Thảo. Cuộc họp Anh Hùng Chiến: Thầy Ba (cựu đặc nhiệm Phan Sơn) dìm hàng Đội 10C1; giới thiệu Tứ Hổ lớp 12A (Phúc An #10 VQB, Hùng, Tuấn, Minh). Tuyết Nhi thách đấu 5v5 sau 1 tuần.
 Ch.095 | Thầy Sĩ, Thầy Ba, Đội 10C1 | Phòng giáo vụ | Thầy Ba hành xử quấy rối; Nhã Uyên bước vào đội và thách Thầy Ba tham gia làm thành viên thứ 5 đội Tứ Hổ → 5v5 được chốt (4 Tứ Hổ + Thầy Ba vs 5 của 10C1).
 Ch.096 | Đội 10C1 | Phòng tập số 1 (17:00 05/01) | Cường được bầu làm Đội trưởng. Briefing luật Anh Hùng Chiến: bản đồ Sơn Tinh-Thủy Tinh, chiến thắng = tiêu diệt địch hoặc phá Tinh Cầu Mị Nương thật (1/4 Tinh Cầu thật). Kỹ năng đặc biệt: Assassin/Tanker/Scout/Summoner/Teleport (mỗi người 1 lần). Nhã Uyên xung đột với Tuyết Nhi về quyền tự quyết; Cường quát cả hai, khẳng định quyền đội trưởng → nhóm quy củ.
@@ -117,6 +135,9 @@ Ch.109 | Cường, Phan Sơn, Hương Thủy, VQT | Phòng họp doanh trại | 
 Ch.110 | Cường, Mộc Thảo, Phan Sơn, VQT, Hương Thủy | Phòng bệnh doanh trại | Mộc Thảo tỉnh, hôn Cường để "kiểm tra sức khỏe" và truyền năng lượng sinh mệnh; Cường thuyết phục ở lại dinh thự Phan gia
 Ch.111 | Cường, Mộc Thảo, Phan Hải, Hồng Hoa, Dương Tính | Biệt phủ Phan gia | Hồng Hoa mỉa mai Mộc Thảo; Dương Tính tấn công Cường bị bẻ tay; Cường công bố danh hiệu Bồi Cơ + Thiếu tá, uy hiếp Phan Hải
 Ch.112 | Cường, Mộc Thảo, Phan Hải, Dương Tính, Hồng Hoa | Biệt phủ Phan gia | Lore Carders system: Tứ Trụ + thẻ J/Q/K/A; Dương Tính lộ là King Heart nhưng đang bị đình chỉ; Cường uy hiếp Phan Hải; Mộc Thảo xúc động nhìn lại phòng cũ
+
+## Arc 7 — Biệt Phủ (Ch.113-127)
+
 Ch.113 | Cường, Mộc Thảo, Phan Sơn | Biệt phủ Phan gia | Phan Sơn gửi cháo yến; Cường hỏi về phòng ngủ — Phan Sơn "bật đèn xanh" muốn có chắt; Cường vô tình thấy Trương Quốc Huy + Hoàng Anh
 Ch.114 | Cường, Mộc Thảo | Phòng ngủ Mộc Thảo (biệt phủ) | Cường tôn trọng giới hạn của Mộc Thảo, ngủ ghế bành; Mộc Thảo mời lên giường chung; kết thúc lãng mạn nhẹ nhàng
 Ch.115 | Cường, Jason Bùi, Mộc Thảo | Biệt phủ Phan gia (đêm) | Ông Biên gọi: Lisa+Benny mất tích bí ẩn; Jason Bùi "Cánh Bạc" tấn công dinh thự; Cường mặc Giáp Bạc CTB đỡ đòn đại bác; Jason Bùi dùng [Không Gian] "Pháo Đài Đen Tối" biến nhà thành mê cung

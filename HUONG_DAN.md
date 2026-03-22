@@ -74,6 +74,8 @@ File gốc ở `chuong/XXX.md`. Chỉ cần đọc khi hồ sơ nhân vật chư
 | `he-thong-gift.md` | Toàn bộ lore Gift: cấp 1-5, 8 Gift đặc biệt cấp 10, bảng Gift đã xuất hiện |
 | `chu-cong-va-to-chuc.md` | Hệ thống Carders (J/Q/K/A × 4 suits), Tứ Trụ, quyền hạn, danh sách thành viên |
 | `luc-quy-de.md` | 6 Quỷ Đế cổ xưa: MATERIA, SPIRITUA, POWERA, DIMENSIA, TIMEA, MINDA |
+| `hon-gioi.md` | Thế giới Linh Hồn: cơ chế, 2 lần Cường vào (Ch.024-028 & Ch.107-108), 10 mảnh hồn |
+| `tan-viet.md` | Tổ chức Tân Việt / Hội Thống Trị: cơ cấu, Tam Giác Quỷ, timeline sự kiện |
 
 ---
 
@@ -93,6 +95,37 @@ File gốc ở `chuong/XXX.md`. Chỉ cần đọc khi hồ sơ nhân vật chư
 | **Hồn Giới** | Thế giới linh hồn — Cường đã vào 2 lần (Ch.024-028 & Ch.107-108) |
 | **Tam Giác Quỷ** | Tổ chức gồm Jason Bùi, Lisa Phạm, Benny Chương dưới trướng Tuyết Nhi |
 | **Tiến Trình Hòa Bình** | Kế hoạch bí mật 40 năm của Phan Sơn: đảo chính ngầm qua tham nhũng |
+
+---
+
+## 7 Arc truyện
+
+| Arc | Chương | Tên | Sự kiện chính |
+|-----|--------|-----|---------------|
+| Arc 1 | Ch.001-014 | Nhập Học | Cường chuyển sinh, nhập học Xà Cừ, hình thành Hội Liên Minh 10C1, Đại Dương hóa quỷ |
+| Arc 2 | Ch.015-028 | Hồn Giới | Cường "chết" ở Đầm Sen, Mộc Thảo vào Hồn Giới cứu, 10 mảnh hồn, lời nguyền biến thể ác tính |
+| Arc 3 | Ch.029-053 | Yêu Nhau | Hậu Hồn Giới, gia đình hai bên, lời nguyền 6 ngày, Cường tỏ tình thành công |
+| Arc 4 | Ch.054-074 | Anh Hùng Chiến | Giải đấu AHC, Ngọc Lan đột nhập biệt thự Phan Sơn, Đỗ Duy Nhất lộ diện |
+| Arc 5 | Ch.075-093 | Tân Việt Xuất Hiện | Kẻ Áo Đen, Lisa Phạm tấn công, Tuyết Nhi bộc lộ [Khải Huyền], Benny phục kích |
+| Arc 6 | Ch.094-112 | Doanh Trại | AHC nội bộ, doanh trại Phan Sơn, Hương Thủy, Nghi thức Lên Đồng, Hồn Giới lần 2 |
+| Arc 7 | Ch.113-127 | Biệt Phủ | Jason Bùi tấn công, mê cung, Tam Giác Quỷ, VQT tham chiến, Lục Quỷ Đế toàn xuất |
+
+---
+
+## Câu hỏi hay gặp → đọc file nào
+
+| Câu hỏi | File cần đọc |
+|---------|-------------|
+| Cường có Gift gì? Ý Chí Đế Vương hoạt động thế nào? | `nhan-vat/luu-chi-cuong.md` |
+| Hồn Giới là gì? Cường vào mấy lần? | `the-gioi/hon-gioi.md` |
+| Tuyết Nhi thực sự là ai? Lục Quỷ Đế là gì? | `nhan-vat/tuyet-nhi.md` + `the-gioi/luc-quy-de.md` |
+| Tân Việt gồm những ai? Cơ cấu tổ chức? | `the-gioi/tan-viet.md` |
+| Carders là gì? Jack Heart là ai? | `the-gioi/chu-cong-va-to-chuc.md` |
+| Phan Sơn che giấu ai và vì sao? | `nhan-vat/phan-son.md` + `nhan-vat/do-duy-nhat.md` |
+| Nghĩa có những Gift gì? | `nhan-vat/nghia.md` |
+| Jason Bùi / Lisa / Benny là ai? | `nhan-vat/jason-bui.md`, `nhan-vat/lisa-pham.md`, `nhan-vat/benny-chuong.md` |
+| Nhân vật phụ X xuất hiện ở chương nào? | `nhan-vat/nhan-vat-phu.md` (grep tên) |
+| Chương X có gì xảy ra? | `index.md` (grep `Ch.0XX`) → `chuong/XXX.md` nếu cần chi tiết |
 
 ---
 
