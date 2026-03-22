@@ -1,0 +1,8 @@
+# Bỏ qua các thư mục hệ thống của Claude
+.skills/
+.projects/
+uploads/
+
+# Giữ lại
+# Dị Biến thế Giới/   ← story file
+# .auto-memory/        ← memory & instructions
