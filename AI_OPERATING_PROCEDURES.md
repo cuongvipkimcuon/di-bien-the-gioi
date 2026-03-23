@@ -205,7 +205,24 @@ rồi viết cảnh Cường trong Ch.128"
 
 ---
 
-### **Giải Pháp #8: Data Integrity Priority (QUAN TRỌNG)**
+### **Giải Pháp #8: Data Integrity Priority + Smart Data Loading (QUAN TRỌNG)**
+
+**BƯỚC 0 - KIỂM TRA LIÊN QUAN (Filter Không Cần Load):**
+
+**Trước khi load bất kỳ file nào, hỏi:**
+- ❓ Câu hỏi này có **liên quan trực tiếp** đến nội dung dữ liệu truyện không?
+
+**Ví Dụ KHÔNG Cần Load:**
+- "Viết 1 bài luận về tiểu thuyết web" → Không liên quan → ❌ Không load
+- "Tiểu thuyết web là gì?" → Kiến thức chung → ❌ Không load
+- "Phong cách viết nên như thế nào?" → Kiến thức viết chung → ❌ Không load (trừ khi hỏi cụ thể về style.md)
+- "Hãy tạo bảng thống kê nhân vật" → Không yêu cầu verify dữ liệu gốc → ❌ Có thể không load
+
+**Ví Dụ CẦN Load:**
+- "Cường là ai?" → Liên quan nhân vật → ✅ Load nhan-vat/
+- "Arc 5 xảy ra gì?" → Liên quan nội dung → ✅ Load arc-summary (hoặc chuong/ để verify)
+- "Tuyết Nhi có Gift gì?" → Liên quan dữ liệu → ✅ Load nhan-vat/tuyet-nhi
+- "Phát hiện lỗi ở chương X" → Verify dữ liệu → ✅ Load chuong/XXX
 
 **Quy Tắc Phân Cấp Dữ Liệu:**
 
@@ -229,10 +246,13 @@ rồi viết cảnh Cường trong Ch.128"
 **Khi Nào KHÔNG cần Load `chuong/`:**
 - ❌ Chỉ cần overview/tóm tắt → dùng arc-summary + nhan-vat là đủ
 - ❌ Token budget cực hạn → dùng file tóm tắt (đầu tiên)
+- ❌ **Câu hỏi KHÔNG liên quan dữ liệu truyện** → KHÔNG load bất cứ file nào
 
-**Tiết Kiệm:** ~0% (vì đây là rule bảo đảm quality, không giảm token)
+**Tiết Kiệm:** ~5-10% tokens (bằng cách không load file khi không cần)
 
 **Cách Thực Hiện:**
+- **TRƯỚC:** Kiểm tra "Liên quan dữ liệu truyện không?" → Nếu NO → trả lời trực tiếp
+- **Nếu YES:** Tiếp tục load file theo Giải Pháp #8
 - Luôn xác nhận dữ liệu bằng `chuong/` khi có nghi ngờ
 - Load chapters liên quan khi viết phân tích chi tiết
 - Báo user nếu phát hiện lỗi trong file non-chuong/
@@ -241,8 +261,12 @@ rồi viết cảnh Cường trong Ch.128"
 
 ## 📋 Checklist Tự Động
 
-**Mỗi Request, AI phải Tự Kiểm Tra:**
+**Mỗi Request, AI phải Tự Kiểm Tra (Theo Thứ Tự):**
 
+**🔴 FILTER TRƯỚC TIÊN:**
+- [ ] **Câu hỏi có liên quan dữ liệu truyện không?** → Nếu NO → Trả lời trực tiếp, KHÔNG load file
+
+**Nếu CÓ liên quan, tiếp tục:**
 - [ ] **Có lặp lại nội dung request trước không?** → Loại bỏ nó (#1)
 - [ ] **Có batch được 2-3 task liên quan không?** → Gộp thành 1 (#2)
 - [ ] **Cần grep trước không?** → Hỏi grep trước đọc (#3)
@@ -370,13 +394,14 @@ Request 4: "Push lên git"
 
 **Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #6 #7 #8)
 
-**Mục Tiêu:** Tiết kiệm **30-40% tokens/session** + **đảm bảo 100% data accuracy**
+**Mục Tiêu:** Tiết kiệm **30-45% tokens/session** + **đảm bảo 100% data accuracy**
 
 ---
 
 ---
 
-**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6, #7 & #8**
-- Tổng tiết kiệm: **30-40% tokens/session**
+**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6, #7 & #8 (Tăng Cường #8)**
+- Tổng tiết kiệm: **30-45% tokens/session** (thêm filter không liên quan)
 - Data accuracy: **100% (chuong/ là source of truth)**
-- Từ giờ AI sẽ tự động áp dụng 8 giải pháp
+- Smart loading: **Không load file nếu câu hỏi không liên quan dữ liệu**
+- Từ giờ AI sẽ tự động áp dụng 8 giải pháp (+ filter layer)
