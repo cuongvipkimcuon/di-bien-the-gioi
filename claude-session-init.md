@@ -101,6 +101,28 @@ git remote set-url origin https://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@githu
 
 ---
 
+## 🎬 Ví Dụ: Session Mới từ Máy Khác
+
+### **Tình Huống:**
+Cuong clone repo về máy laptop mới, mở Cowork session mới.
+
+### **Quy Trình:**
+```
+1. AI đọc file claude-session-init.md → Thấy checklist
+2. AI clone repo + config git (dùng token trong mục 🔗)
+3. AI đọc: AI_OPERATING_PROCEDURES.md (9 giải pháp)
+4. AI xác nhận: "Đã kích hoạt"
+5. Cuong: "Tìm chương có Cường dùng Ý Chí Đế Vương"
+6. AI tuân theo 9 giải pháp tự động:
+   - Không lặp context ✓
+   - Grep index.md: "#cuong #ychidevuong" ✓
+   - Xem kết quả → quyết định file tiếp theo ✓
+   - Dùng nhan-vat/luu-chi-cuong.md (nhỏ) chứ không dùng chuong/ ✓
+   - Batch request nếu có thêm task ✓
+```
+
+---
+
 ## ✅ AI Initialization Protocol (BẮT BUỘC)
 
 **Khi AI bắt đầu session mới, AI PHẢI thực hiện theo thứ tự này:**
