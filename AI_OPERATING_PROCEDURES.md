@@ -333,18 +333,20 @@ Request 3: "Viết chương 128 với phong cách trên"
 
 ❌ **Cách lãng phí:**
 ```
-Request 1: "Cập nhật index.md và trang-thai.md và arc7-summary.md"
-→ Đọc 3 file để modify
+Request 1: "Cập nhật index.md"
+Request 2: "Cập nhật trang-thai.md"
+Request 3: "Cập nhật arc7-summary.md"
+Request 4: "Push lên git"
 ```
+→ 4 request, overhead nhiều
 
 ✅ **Cách tối ưu:**
 ```
-Request 1: "Cập nhật index.md: Ch.128 [nội dung]"
-Request 2: "Cập nhật trang-thai.md: vị trí mới"
-Request 3: "Cập nhật arc7-summary.md: thêm sự kiện"
-Request 4: "Push lên git"
+Request 1: "Cập nhật 3 file: index.md (Ch.128), trang-thai.md (vị trí mới), arc7-summary.md (thêm sự kiện)"
+[Hoàn thành 3 cập nhật trong 1 request - batch per Giải Pháp #2]
+Request 2: "Push lên git"
 ```
-→ Tách rõ, dễ track, dễ commit
+→ 2 request, batch related tasks (#2), commit riêng (#7)
 
 ---
 
