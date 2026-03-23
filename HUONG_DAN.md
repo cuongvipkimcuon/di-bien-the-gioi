@@ -8,21 +8,11 @@
 
 **📌 CHO CÁC SESSION COWORK MỚI:**
 
-Nếu đây là session Cowork mới (clone repo từ máy khác), **AI phải đọc `AI_OPERATING_PROCEDURES.md` trước tiên** để kích hoạt 9 giải pháp (tiết kiệm token + quality + linh hoạt):
+Nếu đây là session Cowork mới (clone repo từ máy khác), **AI phải:**
+1. Đọc `.claude-session-init.md` (khởi tạo session)
+2. Đọc `AI_OPERATING_PROCEDURES.md` (chi tiết 9 giải pháp)
 
-1. ✅ KHÔNG include chat cũ
-2. ✅ Batch request liên quan
-3. ✅ Grep trước, đọc sau
-4. ✅ Ưu tiên file nhỏ
-5. ✅ Chỉ dùng chuong/ cuối cùng
-6. ✅ Ghi file, show brief status
-7. ✅ Combine dependent tasks
-8. ✅ **Data Integrity Priority** (chuong/ = source of truth)
-9. ✅ **Smart Escalation** (leo thang có điều kiện khi cần chi tiết)
-
-**File cần đọc:** `AI_OPERATING_PROCEDURES.md` (chi tiết + ví dụ)
-
-**Hiệu quả:** Tiết kiệm ~30-45% tokens/session + **100% data accuracy** + **linh hoạt đáp ứng nhu cầu**
+**Hiệu quả:** Tiết kiệm ~30-45% tokens/session + 100% data accuracy
 
 ---
 
