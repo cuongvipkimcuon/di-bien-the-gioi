@@ -420,7 +420,7 @@ Request 4: "Push lên git"
 ```
 → 4 request = 4x context loading overhead, AI tốn phí "nổ máy" 4 lần
 
-✅ **Cách tối ưu (Batch Sequential per #2 & #7):**
+✅ **Cách tối ưu (Sequential Dependent per #7):**
 ```
 Request 1 (ONLY ONE): "Thực hiện chuỗi tác vụ sau:
 1. Cập nhật index.md: Ch.128 [nội dung]
@@ -428,7 +428,7 @@ Request 1 (ONLY ONE): "Thực hiện chuỗi tác vụ sau:
 3. Cập nhật arc7-summary.md: thêm sự kiện
 4. Git push và báo lại trạng thái"
 ```
-→ 1 request = AI gọi tool liên tiếp (edit file 1 → file 2 → file 3 → git push) trong 1 chu kỳ suy nghĩ. Chỉ trả phí 1 lần context loading.
+→ 1 request = AI gọi tool liên tiếp (edit file 1 → file 2 → file 3 → git push) trong 1 chu kỳ suy nghĩ. Chỉ trả phí 1 lần context loading. (Giải Pháp #7: Combine Dependent Tasks)
 
 ---
 

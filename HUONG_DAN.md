@@ -65,14 +65,15 @@ Ví dụ:
 - Hệ thống: `#hongioi #lucquyde #tanviet #carders #vo #ychidewuong #ahc #hoilienminh #hethong`
 - Địa điểm/sự kiện: `#doantrai #bietphu #damsen #phantoc #romance #death #reveal #chuyensinh`
 
-### Bước 2 — Lazy loading theo chiều sâu (QUAN TRỌNG)
-Khi câu hỏi liên quan đến một arc cụ thể:
-- **Arc được hỏi trực tiếp** → đọc chương gốc `chuong/XXX.md`
-- **Arc trước đó** (bối cảnh/tiền đề) → chỉ đọc `arc/arcX-summary.md`
+### Bước 2 — Smart Loading theo Giải Pháp #4, #5, #9 (QUAN TRỌNG)
+Khi câu hỏi liên quan đến một arc cụ thể, tuân theo thứ tự:
+- **Arc được hỏi trực tiếp** → TRY `arc/arcX-summary.md` TRƯỚC, chỉ dùng `chuong/XXX.md` nếu cần chi tiết (per #5 & #9)
+- **Arc trước đó** (bối cảnh/tiền đề) → chỉ đọc `arc/arcX-summary.md` (không cần chuong/)
 - **Arc không liên quan** → bỏ qua hoàn toàn
 
 Ví dụ: câu hỏi về sự kiện Arc 5 nhưng cần hiểu bối cảnh từ Arc 3:
-→ Đọc `arc/arc3-summary.md` (bối cảnh) + `chuong/075-093.md` (chi tiết Arc 5)
+→ Đọc `arc/arc3-summary.md` (bối cảnh) + `arc/arc5-summary.md` (tóm tắt Arc 5)
+→ Chỉ đọc `chuong/075-093.md` nếu arc summary chưa đủ chi tiết
 
 ### Bước 3 — Đọc hồ sơ nhân vật
 Hồ sơ nhân vật tổng hợp toàn bộ thông tin theo chủ đề. Dùng khi cần thông tin xuyên suốt nhiều arc về 1 nhân vật.
