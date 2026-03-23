@@ -329,24 +329,26 @@ Request 3: "Viết chương 128 với phong cách trên"
 
 ---
 
-### **Ví Dụ 3: Cập Nhật KB**
+### **Ví Dụ 3: Cập Nhật KB & Push Git**
 
-❌ **Cách lãng phí:**
+❌ **Cách lãng phí (Chia nhỏ request):**
 ```
 Request 1: "Cập nhật index.md"
 Request 2: "Cập nhật trang-thai.md"
 Request 3: "Cập nhật arc7-summary.md"
 Request 4: "Push lên git"
 ```
-→ 4 request, overhead nhiều
+→ 4 request = 4x context loading overhead, AI tốn phí "nổ máy" 4 lần
 
-✅ **Cách tối ưu:**
+✅ **Cách tối ưu (Batch Sequential per #2 & #7):**
 ```
-Request 1: "Cập nhật 3 file: index.md (Ch.128), trang-thai.md (vị trí mới), arc7-summary.md (thêm sự kiện)"
-[Hoàn thành 3 cập nhật trong 1 request - batch per Giải Pháp #2]
-Request 2: "Push lên git"
+Request 1 (ONLY ONE): "Thực hiện chuỗi tác vụ sau:
+1. Cập nhật index.md: Ch.128 [nội dung]
+2. Cập nhật trang-thai.md: vị trí mới
+3. Cập nhật arc7-summary.md: thêm sự kiện
+4. Git push và báo lại trạng thái"
 ```
-→ 2 request, batch related tasks (#2), commit riêng (#7)
+→ 1 request = AI gọi tool liên tiếp (edit file 1 → file 2 → file 3 → git push) trong 1 chu kỳ suy nghĩ. Chỉ trả phí 1 lần context loading.
 
 ---
 
