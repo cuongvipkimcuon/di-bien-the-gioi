@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 7 Giải Pháp Tiết Kiệm Token — BẮTBUỘC
+## 🎯 8 Giải Pháp Tiết Kiệm Token + Data Integrity — BẮTBUỘC
 
 ### **Giải Pháp #1: KHÔNG Include Chat Cũ**
 
@@ -205,6 +205,40 @@ rồi viết cảnh Cường trong Ch.128"
 
 ---
 
+### **Giải Pháp #8: Data Integrity Priority (QUAN TRỌNG)**
+
+**Quy Tắc Phân Cấp Dữ Liệu:**
+
+| Cấp Độ | File | Vai Trò | Độ Tin Cậy |
+|--------|------|--------|-----------|
+| 🔴 **PRIMARY** | `chuong/001-127.md` | **Nguồn chân lý duy nhất** | 100% ✅ |
+| 🟡 **SECONDARY** | arc-summary, nhan-vat, the-gioi | Bổ sung, cross-check | ~80-90% |
+| 🟢 **OPTIONAL** | style, trang-thai, index | Tham khảo nhanh | ~70-80% |
+
+**Nguyên Tắc Mâu Thuẫn:**
+- Nếu `arc-summary` nói A, nhưng `chuong/XXX` nói B → **tin `chuong/` & sửa file khác**
+- Không bao giờ sửa `chuong/` dựa trên file khác
+- Khi phát hiện mâu thuẫn → báo user & sửa tự động
+
+**Khi Nào PHẢI Load `chuong/`:**
+- ✅ Cần **xác nhận dữ liệu chính xác** (không phải chỉ overview)
+- ✅ Phát hiện **mâu thuẫn giữa file** → verify bằng gốc
+- ✅ Cập nhật/sửa KB → check `chuong/` trước (source of truth)
+- ✅ Phân tích chi tiết Arc → load chapters liên quan làm nền tảng
+
+**Khi Nào KHÔNG cần Load `chuong/`:**
+- ❌ Chỉ cần overview/tóm tắt → dùng arc-summary + nhan-vat là đủ
+- ❌ Token budget cực hạn → dùng file tóm tắt (đầu tiên)
+
+**Tiết Kiệm:** ~0% (vì đây là rule bảo đảm quality, không giảm token)
+
+**Cách Thực Hiện:**
+- Luôn xác nhận dữ liệu bằng `chuong/` khi có nghi ngờ
+- Load chapters liên quan khi viết phân tích chi tiết
+- Báo user nếu phát hiện lỗi trong file non-chuong/
+
+---
+
 ## 📋 Checklist Tự Động
 
 **Mỗi Request, AI phải Tự Kiểm Tra:**
@@ -216,6 +250,7 @@ rồi viết cảnh Cường trong Ch.128"
 - [ ] **Có cần chuong/ không?** → Chỉ dùng nếu thực sự cần (#5)
 - [ ] **Response sẽ dài > 500 từ không?** → Ghi file, show summary (#6)
 - [ ] **Có task liên tiếp phụ thuộc không?** → Combine thành 1 request (#7)
+- [ ] **Cần xác nhận dữ liệu / phát hiện mâu thuẫn?** → Load `chuong/` verify (#8 PRIORITY)
 
 ---
 
@@ -323,7 +358,7 @@ Request 4: "Push lên git"
 
 ## ✅ Xác Nhận Áp Dụng
 
-**AI xác nhận tuân theo 7 Giải Pháp từ:**
+**AI xác nhận tuân theo 8 Giải Pháp từ:**
 - ✅ Giải Pháp #1: Không include chat cũ
 - ✅ Giải Pháp #2: Batch request liên quan
 - ✅ Giải Pháp #3: Grep trước, đọc sau
@@ -331,15 +366,17 @@ Request 4: "Push lên git"
 - ✅ Giải Pháp #5: Chỉ dùng chuong/ cuối cùng
 - ✅ Giải Pháp #6: Ghi file, show brief status
 - ✅ Giải Pháp #7: Combine dependent tasks
+- ✅ Giải Pháp #8: Data Integrity Priority (**bảo đảm quality**)
 
-**Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #6 #7)
+**Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #6 #7 #8)
 
-**Mục Tiêu:** Tiết kiệm **30-40% tokens/session** so với quy trình bình thường
+**Mục Tiêu:** Tiết kiệm **30-40% tokens/session** + **đảm bảo 100% data accuracy**
 
 ---
 
 ---
 
-**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6 & #7**
-- Tổng tiết kiệm từ 25-30% → **30-40% tokens/session**
-- Từ giờ AI sẽ tự động áp dụng 7 giải pháp
+**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6, #7 & #8**
+- Tổng tiết kiệm: **30-40% tokens/session**
+- Data accuracy: **100% (chuong/ là source of truth)**
+- Từ giờ AI sẽ tự động áp dụng 8 giải pháp
