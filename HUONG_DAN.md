@@ -9,6 +9,7 @@
 ```
 /
 ├── HUONG_DAN.md          ← (file này) bản đồ toàn bộ KB
+├── style.md              ← PHONG CÁCH VIẾT: giọng văn, cấu trúc, hội thoại, thói quen dùng từ
 ├── trang-thai.md         ← TRẠNG THÁI HIỆN TẠI: vị trí nhân vật, plot threads mở, quan hệ
 ├── index.md              ← TÓM TẮT 127 CHƯƠNG có tags, đọc đầu tiên khi cần định vị
 ├── arc/                  ← Summary từng arc (arc1 → arc7), dùng thay chương gốc khi có thể
@@ -28,7 +29,10 @@
 
 ## Cách tìm kiếm thông minh
 
-### Bước 0 — Câu hỏi về "hiện tại" → đọc trang-thai.md trước
+### Bước 0A — Câu hỏi về phong cách / viết chương mới → đọc style.md TRƯỚC TIÊN
+Mọi câu hỏi kiểu "viết theo phong cách tác giả", "tiếp tục chương mới", "cách tác giả hay dùng từ gì", "giọng văn thế nào" → **chỉ cần đọc `style.md`**. Không cần đọc chương gốc để tìm phong cách.
+
+### Bước 0B — Câu hỏi về "hiện tại" → đọc trang-thai.md trước
 Mọi câu hỏi kiểu "X đang ở đâu", "plot nào đang mở", "quan hệ hiện tại thế nào" → đọc `trang-thai.md` là đủ trong 90% trường hợp. Không cần tra index hay chương gốc.
 
 ### Bước 1 — Xác định phạm vi bằng index.md
@@ -143,6 +147,9 @@ File gốc ở `chuong/XXX.md`. Chỉ cần đọc khi arc summary + hồ sơ nh
 
 | Câu hỏi | File cần đọc |
 |---------|-------------|
+| **Viết chương mới / hỏi về phong cách viết** | **`style.md` — ĐỌC ĐẦU TIÊN, không cần đọc chương gốc** |
+| X đang ở đâu? Plot nào đang mở? | `trang-thai.md` |
+| Arc X tóm tắt như thế nào? | `arc/arcX-summary.md` |
 | Cường có Gift gì? Ý Chí Đế Vương hoạt động thế nào? | `nhan-vat/luu-chi-cuong.md` |
 | Hồn Giới là gì? Cường vào mấy lần? | `the-gioi/hon-gioi.md` |
 | Tuyết Nhi thực sự là ai? Lục Quỷ Đế là gì? | `nhan-vat/tuyet-nhi.md` + `the-gioi/luc-quy-de.md` |
