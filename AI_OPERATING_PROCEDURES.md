@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 5 Giải Pháp Tiết Kiệm Token — BẮTBUỘC
+## 🎯 7 Giải Pháp Tiết Kiệm Token — BẮTBUỘC
 
 ### **Giải Pháp #1: KHÔNG Include Chat Cũ**
 
@@ -141,15 +141,81 @@ Request 1: "Grep index.md với tags: #cuong, #thao, #tuyetnhi"
 
 ---
 
+### **Giải Pháp #6: Ghi File, Show Brief Status**
+
+**Quy Tắc:**
+- Tất cả response **DÀI** (> 500 từ hoặc xử lý phức tạp) → **ghi vào file**
+- Chat chỉ show: "✅ Success" + link file + small note
+- Giúp tiết kiệm tokens display (response dài = nhiều tokens)
+
+**Không Tốt:**
+```
+Request: "Phân tích Arc 5"
+Response: [2000 từ analysis trực tiếp trong chat]
+→ 2000 từ = ~500-800 tokens display
+```
+
+**✅ ĐÚNG:**
+```
+Request: "Phân tích Arc 5 và lưu vào file"
+Response: "✅ Analysis saved: `arc5-analysis.md`
+📝 Tóm tắt: Arc 5 là giai đoạn Tân Việt xuất hiện..."
+```
+
+**Tiết Kiệm:** ~10-20% tokens/request (nếu response dài)
+
+**Cách Thực Hiện:**
+- Response > 500 từ → tự động ghi file
+- File được lưu trong workspace (`/outputs/` hoặc project folder)
+- Chat show: status + link + 1-2 dòng summary
+- User có thể đọc file đầy đủ sau
+
+---
+
+### **Giải Pháp #7: Combine Dependent Tasks**
+
+**Quy Tắc:**
+- Task **CÓ LIÊN QUAN & PHỤ THUỘC** → 1 request duy nhất (sequential)
+- Task **KHÔNG LIÊN QUAN** → tách request riêng
+- Ví dụ: "Grep → analyze → write" = 1 request (tasks sequential)
+- Ví dụ: "Viết chương" + "Cập nhật index.md" = 2 request (không liên quan)
+
+**Không Tốt:**
+```
+Request 1: "Grep '#cuong' index.md"
+Request 2: "Phân tích Cường"
+Request 3: "Viết cảnh Cường trong Ch.128"
+→ 3 request, mỗi request header + context setup
+```
+
+**✅ ĐÚNG:**
+```
+Request 1: "Grep '#cuong' index.md, sau đó phân tích Cường,
+rồi viết cảnh Cường trong Ch.128"
+→ 1 request, tasks sequential
+→ Grep result → reuse cho Analyze → reuse cho Write
+```
+
+**Tiết Kiệm:** ~5-15% tokens/session (chỉ khi tasks dependent)
+
+**Cách Thực Hiện:**
+- Trước khi request → kiểm tra: "Task này phụ thuộc vào task trước không?"
+- Nếu YES: Combine thành 1 request (dùng "sau đó", "rồi")
+- Nếu NO: Tách request riêng
+
+---
+
 ## 📋 Checklist Tự Động
 
 **Mỗi Request, AI phải Tự Kiểm Tra:**
 
-- [ ] **Có lặp lại nội dung request trước không?** → Loại bỏ nó
-- [ ] **Có batch được 2-3 task liên quan không?** → Gộp thành 1
-- [ ] **Cần grep trước không?** → Hỏi grep trước đọc
-- [ ] **File nhỏ nào có thể đáp ứng không?** → Dùng file nhỏ trước
-- [ ] **Có cần chuong/ không?** → Chỉ dùng nếu thực sự cần
+- [ ] **Có lặp lại nội dung request trước không?** → Loại bỏ nó (#1)
+- [ ] **Có batch được 2-3 task liên quan không?** → Gộp thành 1 (#2)
+- [ ] **Cần grep trước không?** → Hỏi grep trước đọc (#3)
+- [ ] **File nhỏ nào có thể đáp ứng không?** → Dùng file nhỏ trước (#4)
+- [ ] **Có cần chuong/ không?** → Chỉ dùng nếu thực sự cần (#5)
+- [ ] **Response sẽ dài > 500 từ không?** → Ghi file, show summary (#6)
+- [ ] **Có task liên tiếp phụ thuộc không?** → Combine thành 1 request (#7)
 
 ---
 
@@ -232,7 +298,7 @@ Request 4: "Push lên git"
 **Phạm Vi:** Tất cả request trong Cowork session này và các session tiếp theo (cho đến khi có update mới)
 
 **Cách Kiểm Chứng:**
-- Nếu user hỏi "bạn tuân theo 5 giải pháp chưa?" → AI phải trả lời "Có, đã tuân theo từ request này"
+- Nếu user hỏi "bạn tuân theo 7 giải pháp chưa?" → AI phải trả lời "Có, đã tuân theo từ request này"
 - Nếu user thấy AI không tuân theo → User có quyền nhắc "Làm theo giải pháp #X"
 
 ---
@@ -257,17 +323,23 @@ Request 4: "Push lên git"
 
 ## ✅ Xác Nhận Áp Dụng
 
-**AI xác nhận tuân theo 5 Giải Pháp từ:**
+**AI xác nhận tuân theo 7 Giải Pháp từ:**
 - ✅ Giải Pháp #1: Không include chat cũ
 - ✅ Giải Pháp #2: Batch request liên quan
 - ✅ Giải Pháp #3: Grep trước, đọc sau
 - ✅ Giải Pháp #4: Ưu tiên file nhỏ
 - ✅ Giải Pháp #5: Chỉ dùng chuong/ cuối cùng
+- ✅ Giải Pháp #6: Ghi file, show brief status
+- ✅ Giải Pháp #7: Combine dependent tasks
 
-**Hiệu Lực:** 2026-03-23 trở đi
+**Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #6 #7)
 
-**Mục Tiêu:** Tiết kiệm **25-30% tokens/session** so với quy trình bình thường
+**Mục Tiêu:** Tiết kiệm **30-40% tokens/session** so với quy trình bình thường
 
 ---
 
-**CUONG, CÓ CÂU HỎI GÌ VỀ QUY TRÌNH NÀY KHÔNG?**
+---
+
+**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6 & #7**
+- Tổng tiết kiệm từ 25-30% → **30-40% tokens/session**
+- Từ giờ AI sẽ tự động áp dụng 7 giải pháp

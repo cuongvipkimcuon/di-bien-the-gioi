@@ -8,17 +8,19 @@
 
 **📌 CHO CÁC SESSION COWORK MỚI:**
 
-Nếu đây là session Cowork mới (clone repo từ máy khác), **AI phải đọc `AI_OPERATING_PROCEDURES.md` trước tiên** để kích hoạt 5 giải pháp tiết kiệm token:
+Nếu đây là session Cowork mới (clone repo từ máy khác), **AI phải đọc `AI_OPERATING_PROCEDURES.md` trước tiên** để kích hoạt 7 giải pháp tiết kiệm token:
 
 1. ✅ KHÔNG include chat cũ
 2. ✅ Batch request liên quan
 3. ✅ Grep trước, đọc sau
 4. ✅ Ưu tiên file nhỏ
 5. ✅ Chỉ dùng chuong/ cuối cùng
+6. ✅ Ghi file, show brief status
+7. ✅ Combine dependent tasks
 
-**File cần đọc:** `AI_OPERATING_PROCEDURES.md` (273 dòng, chi tiết + ví dụ)
+**File cần đọc:** `AI_OPERATING_PROCEDURES.md` (chi tiết + ví dụ)
 
-**Hiệu quả:** Tiết kiệm ~25-30% tokens/session
+**Hiệu quả:** Tiết kiệm ~30-40% tokens/session
 
 ---
 
