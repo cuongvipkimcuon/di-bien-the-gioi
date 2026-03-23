@@ -4,6 +4,24 @@
 
 ---
 
+## ⚡ CHÚ Ý: AI OPERATING PROCEDURES
+
+**📌 CHO CÁC SESSION COWORK MỚI:**
+
+Nếu đây là session Cowork mới (clone repo từ máy khác), **AI phải đọc `AI_OPERATING_PROCEDURES.md` trước tiên** để kích hoạt 5 giải pháp tiết kiệm token:
+
+1. ✅ KHÔNG include chat cũ
+2. ✅ Batch request liên quan
+3. ✅ Grep trước, đọc sau
+4. ✅ Ưu tiên file nhỏ
+5. ✅ Chỉ dùng chuong/ cuối cùng
+
+**File cần đọc:** `AI_OPERATING_PROCEDURES.md` (273 dòng, chi tiết + ví dụ)
+
+**Hiệu quả:** Tiết kiệm ~25-30% tokens/session
+
+---
+
 ## Cấu trúc thư mục
 
 ```
