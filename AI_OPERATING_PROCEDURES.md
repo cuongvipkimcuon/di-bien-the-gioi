@@ -8,7 +8,7 @@
 
 ---
 
-## 🎯 8 Giải Pháp Tiết Kiệm Token + Data Integrity — BẮTBUỘC
+## 🎯 9 Giải Pháp Tiết Kiệm Token + Data Integrity — BẮTBUỘC
 
 ### **Giải Pháp #1: KHÔNG Include Chat Cũ**
 
@@ -279,22 +279,82 @@ Data Integrity (#8) ← OVERRIDE (quality > cost)
 
 ---
 
+### **Giải Pháp #9: Smart Escalation (Leo Thang Thông Minh)**
+
+**Vấn Đề:**
+- Giải Pháp #4 nói "ưu tiên file nhỏ" nhưng không nói khi file nhỏ **không đủ thông tin chi tiết** thì làm gì
+- Nếu không leo thang → câu trả lời thiếu, không hữu ích
+- Nếu tự động leo thang → vi phạm #5, tiêu tốn token không cần
+
+**Giải Pháp: Leo Thang Có Điều Kiện**
+
+**BƯỚC 1: Phân Loại Câu Hỏi**
+| Loại | Ví Dụ | Hành Vi |
+|------|-------|--------|
+| **Tổng Quan** | "Tuyết Nhi là ai?", "Arc 5 nói gì?" | ✅ KHÔNG leo thang – file nhỏ đủ |
+| **Chi Tiết Cụ Thể** | "Gift của Tuyết Nhi hoạt động thế nào?", "Lời thoại chính xác là gì?" | ✅ CÓ THỂ leo thang nếu cần |
+| **Verify/Compare** | "Kiểm tra xem có đúng không?", "So sánh hai chương" | ✅ BUỘC leo thang (per #8) |
+
+**BƯỚC 2: Đánh Giá "Thông Tin Đủ Hay Không?"**
+Sau khi đọc file nhỏ, kiểm tra:
+- ✅ File có trả lời rõ ràng câu hỏi không? → **Dừng, đủ rồi**
+- ❌ Thông tin mơ hồ/chung chung nhưng câu hỏi yêu cầu chi tiết? → **Xem xét leo thang**
+- ❌ File không có thông tin liên quan? → **Phải leo thang**
+
+**Ví dụ:**
+- Hỏi "Tuyết Nhi có Gift gì?" + File có "Gift: Băng Linh" → Đủ, dừng
+- Hỏi "Cách Tuyết Nhi dùng Băng Linh trong trận chiến?" + File chỉ nêu tên → Cần leo thang
+
+**BƯỚC 3: Leo Thang Có Kiểm Soát**
+Nếu quyết định leo thang:
+
+1. **Báo user** (minh bạch token):
+   ```
+   "Thông tin trong hồ sơ chưa đủ chi tiết.
+   Tôi sẽ tra trong arc summary để có câu trả lời đầy đủ."
+   ```
+
+2. **Tuân thủ thứ tự #4** khi leo thang:
+   - Thử `arc-summary` trước
+   - Chỉ lên `chuong/` nếu arc cũng không đủ
+
+3. **Nếu phải dùng `chuong/`:**
+   - KHÔNG đọc toàn bộ file (~40KB)
+   - Dùng **grep trước** để định vị đoạn cần
+   - Chỉ đọc đoạn liên quan (~2-5KB)
+
+**Không Leo Thang Nếu:**
+- ❌ Câu hỏi chỉ cần tổng quan, file nhỏ đã đủ
+- ❌ User có thói quen chấp nhận thông tin cơ bản
+- ❌ Token budget rất tight (user nhắc "tiết kiệm tối đa")
+
+**Tiết Kiệm:** ~5-15% tokens (tránh đọc full file khi chỉ cần đoạn nhỏ)
+
+**Cách Thực Hiện:**
+- Phân loại câu hỏi theo bảng trên
+- Đánh giá thông tin từ file nhỏ
+- Nếu cần, leo thang có báo cáo + chỉ đọc đoạn cần
+- Không tự động leo thang chỉ vì "file ngắn"
+
+---
+
 ## 📋 Checklist Tự Động
 
-**Mỗi Request, AI phải Tự Kiểm Tra (Theo Thứ Tự):**
+**Mỗi Request, AI phải Tự Kiểm Tra (Theo Thứ Tự Ưu Tiên):**
 
-**🔴 FILTER TRƯỚC TIÊN:**
+**🔴 PRIORITY 0 - FILTER & QUALITY:**
 - [ ] **Câu hỏi có liên quan dữ liệu truyện không?** → Nếu NO → Trả lời trực tiếp, KHÔNG load file
+- [ ] **Phát hiện mâu thuẫn hoặc user yêu cầu verify?** → Override tất cả, load `chuong/` (#8 PRIORITY)
 
-**Nếu CÓ liên quan, tiếp tục:**
+**🟡 PRIORITY 1 - OPTIMIZATION (Nếu CÓ liên quan):**
 - [ ] **Có lặp lại nội dung request trước không?** → Loại bỏ nó (#1)
 - [ ] **Có batch được 2-3 task liên quan không?** → Gộp thành 1 (#2)
 - [ ] **Cần grep trước không?** → Hỏi grep trước đọc (#3)
 - [ ] **File nhỏ nào có thể đáp ứng không?** → Dùng file nhỏ trước (#4)
+- [ ] **File nhỏ chứa đủ thông tin chưa, hay cần leo thang?** → Phân loại câu hỏi, leo thang nếu cần (#9)
 - [ ] **Có cần chuong/ không?** → Chỉ dùng nếu thực sự cần (#5)
 - [ ] **Response sẽ dài > 500 từ không?** → Ghi file, show summary (#6)
 - [ ] **Có task liên tiếp phụ thuộc không?** → Combine thành 1 request (#7)
-- [ ] **Cần xác nhận dữ liệu / phát hiện mâu thuẫn?** → Load `chuong/` verify (#8 PRIORITY)
 
 ---
 
@@ -406,7 +466,7 @@ Request 1 (ONLY ONE): "Thực hiện chuỗi tác vụ sau:
 
 ## ✅ Xác Nhận Áp Dụng
 
-**AI xác nhận tuân theo 8 Giải Pháp từ:**
+**AI xác nhận tuân theo 9 Giải Pháp từ:**
 - ✅ Giải Pháp #1: Không include chat cũ
 - ✅ Giải Pháp #2: Batch request liên quan
 - ✅ Giải Pháp #3: Grep trước, đọc sau
@@ -415,17 +475,19 @@ Request 1 (ONLY ONE): "Thực hiện chuỗi tác vụ sau:
 - ✅ Giải Pháp #6: Ghi file, show brief status
 - ✅ Giải Pháp #7: Combine dependent tasks
 - ✅ Giải Pháp #8: Data Integrity Priority (**bảo đảm quality**)
+- ✅ Giải Pháp #9: Smart Escalation (**đáp ứng nhu cầu chi tiết**)
 
-**Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #6 #7 #8)
+**Hiệu Lực:** 2026-03-23 trở đi (Cập nhật: Thêm #9 + Checklist Priority Reorder)
 
-**Mục Tiêu:** Tiết kiệm **30-45% tokens/session** + **đảm bảo 100% data accuracy**
+**Mục Tiêu:** Tiết kiệm **30-45% tokens/session** + **100% data accuracy** + **linh hoạt đáp ứng nhu cầu**
 
 ---
 
 ---
 
-**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6, #7 & #8 (Tăng Cường #8)**
-- Tổng tiết kiệm: **30-45% tokens/session** (thêm filter không liên quan)
+**Cập Nhật: 2026-03-23 Thêm Giải Pháp #6, #7, #8, #9 (Hoàn Chỉnh SOP)**
+- Tổng tiết kiệm: **30-45% tokens/session** (filter + smart escalation)
 - Data accuracy: **100% (chuong/ là source of truth)**
-- Smart loading: **Không load file nếu câu hỏi không liên quan dữ liệu**
-- Từ giờ AI sẽ tự động áp dụng 8 giải pháp (+ filter layer)
+- Smart loading: **Không load nếu không liên quan + Leo thang thông minh khi cần chi tiết**
+- Checklist: **Reorder priority (#8 check ngay sau filter, trước tất cả #1-7)**
+- Từ giờ AI sẽ tự động áp dụng **9 giải pháp** (đầy đủ + linh hoạt)
