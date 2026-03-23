@@ -9,7 +9,16 @@
 ```
 /
 ├── HUONG_DAN.md          ← (file này) bản đồ toàn bộ KB
-├── index.md              ← TÓM TẮT 127 CHƯƠNG, đọc đầu tiên khi cần định vị
+├── trang-thai.md         ← TRẠNG THÁI HIỆN TẠI: vị trí nhân vật, plot threads mở, quan hệ
+├── index.md              ← TÓM TẮT 127 CHƯƠNG có tags, đọc đầu tiên khi cần định vị
+├── arc/                  ← Summary từng arc (arc1 → arc7), dùng thay chương gốc khi có thể
+│   ├── arc1-summary.md   ← Arc 1: Nhập Học (Ch.001-014)
+│   ├── arc2-summary.md   ← Arc 2: Hồn Giới (Ch.015-028)
+│   ├── arc3-summary.md   ← Arc 3: Yêu Nhau (Ch.029-053)
+│   ├── arc4-summary.md   ← Arc 4: Anh Hùng Chiến (Ch.054-074)
+│   ├── arc5-summary.md   ← Arc 5: Tân Việt Xuất Hiện (Ch.075-093)
+│   ├── arc6-summary.md   ← Arc 6: Doanh Trại (Ch.094-112)
+│   └── arc7-summary.md   ← Arc 7: Biệt Phủ (Ch.113-127) — ARC HIỆN TẠI
 ├── chuong/               ← Văn bản gốc từng chương (001.md → 127.md)
 ├── nhan-vat/             ← File hồ sơ từng nhân vật
 └── the-gioi/             ← Lore thế giới, hệ thống sức mạnh, tổ chức
@@ -19,23 +28,41 @@
 
 ## Cách tìm kiếm thông minh
 
+### Bước 0 — Câu hỏi về "hiện tại" → đọc trang-thai.md trước
+Mọi câu hỏi kiểu "X đang ở đâu", "plot nào đang mở", "quan hệ hiện tại thế nào" → đọc `trang-thai.md` là đủ trong 90% trường hợp. Không cần tra index hay chương gốc.
+
 ### Bước 1 — Xác định phạm vi bằng index.md
 `index.md` có đúng 127 dòng, mỗi dòng format:
 ```
-Ch.XXX | Nhân vật chính | Địa điểm | Sự kiện cốt lõi
+Ch.XXX | Nhân vật chính | Địa điểm | Sự kiện cốt lõi #tag1 #tag2
 ```
-**Dùng Grep trên index.md** để định vị nhanh chương cần đọc thay vì đọc toàn bộ văn bản gốc.
+**Dùng Grep trên index.md** để định vị nhanh chương cần đọc.
 
 Ví dụ:
-- Tìm chương có Tuyết Nhi → `grep "Tuyết Nhi" index.md`
-- Tìm chương ở Đầm Sen → `grep "Đầm Sen" index.md`
-- Tìm khi VÔ lần đầu xuất hiện → `grep "\[VÔ\]" index.md`
+- Tìm chương có Tuyết Nhi → `grep "#tuyetnhi" index.md`
+- Tìm chương liên quan Hồn Giới → `grep "#hongioi" index.md`
+- Tìm sự kiện VÔ → `grep "#vo" index.md`
+- Tìm theo tên trực tiếp → `grep "Đầm Sen" index.md`
 
-### Bước 2 — Đọc hồ sơ nhân vật trước khi đọc chương gốc
-Hồ sơ nhân vật đã tổng hợp sẵn toàn bộ thông tin theo chủ đề. Tiết kiệm hơn nhiều so với đọc chương gốc.
+**Danh sách tags chuẩn:**
+- Nhân vật: `#cuong #mocthao #tuyetnhi #nghia #phanson #vqt #ngoclan #nhauyen #jasonbui #lisapham #bennychuong #huongthuy #ingah #duongtinh #truongquochuy #ongbien #thuquynh #doduynhat`
+- Hệ thống: `#hongioi #lucquyde #tanviet #carders #vo #ychidewuong #ahc #hoilienminh #hethong`
+- Địa điểm/sự kiện: `#doantrai #bietphu #damsen #phantoc #romance #death #reveal #chuyensinh`
 
-### Bước 3 — Đọc chương gốc chỉ khi cần chi tiết cụ thể
-File gốc ở `chuong/XXX.md`. Chỉ cần đọc khi hồ sơ nhân vật chưa đủ.
+### Bước 2 — Lazy loading theo chiều sâu (QUAN TRỌNG)
+Khi câu hỏi liên quan đến một arc cụ thể:
+- **Arc được hỏi trực tiếp** → đọc chương gốc `chuong/XXX.md`
+- **Arc trước đó** (bối cảnh/tiền đề) → chỉ đọc `arc/arcX-summary.md`
+- **Arc không liên quan** → bỏ qua hoàn toàn
+
+Ví dụ: câu hỏi về sự kiện Arc 5 nhưng cần hiểu bối cảnh từ Arc 3:
+→ Đọc `arc/arc3-summary.md` (bối cảnh) + `chuong/075-093.md` (chi tiết Arc 5)
+
+### Bước 3 — Đọc hồ sơ nhân vật
+Hồ sơ nhân vật tổng hợp toàn bộ thông tin theo chủ đề. Dùng khi cần thông tin xuyên suốt nhiều arc về 1 nhân vật.
+
+### Bước 4 — Đọc chương gốc chỉ khi cần chi tiết cụ thể
+File gốc ở `chuong/XXX.md`. Chỉ cần đọc khi arc summary + hồ sơ nhân vật chưa đủ.
 
 ---
 
