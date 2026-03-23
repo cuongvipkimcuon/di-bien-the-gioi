@@ -232,16 +232,36 @@ rồi viết cảnh Cường trong Ch.128"
 | 🟡 **SECONDARY** | arc-summary, nhan-vat, the-gioi | Bổ sung, cross-check | ~80-90% |
 | 🟢 **OPTIONAL** | style, trang-thai, index | Tham khảo nhanh | ~70-80% |
 
-**Nguyên Tắc Mâu Thuẫn:**
-- Nếu `arc-summary` nói A, nhưng `chuong/XXX` nói B → **tin `chuong/` & sửa file khác**
-- Không bao giờ sửa `chuong/` dựa trên file khác
-- Khi phát hiện mâu thuẫn → báo user & sửa tự động
+**Quy Tắc Xử Lý Mâu Thuẫn (Phá Vỡ #5 Khi Cần):**
 
-**Khi Nào PHẢI Load `chuong/`:**
-- ✅ Cần **xác nhận dữ liệu chính xác** (không phải chỉ overview)
-- ✅ Phát hiện **mâu thuẫn giữa file** → verify bằng gốc
+**🔴 DEFAULT (Tuân Thủ #5):**
+- Mặc định KHÔNG load `chuong/` để tiết kiệm token (per Giải Pháp #5)
+- Dùng arc-summary, nhan-vat, the-gioi là đủ
+
+**🚨 EXCEPTION (Phá Vỡ #5 → Dùng #8):**
+- **NẾU** phát hiện **mâu thuẫn logic** giữa files (arc-summary vs nhan-vat vs chuong/)
+- **HOẶC** user yêu cầu "xác minh tính chính xác 100%"
+- **THÌ** AI được phép **lập tức phá vỡ Giải Pháp #5** → Load file gốc trong `chuong/` để trọng tài
+
+**Ưu Tiên:**
+```
+Token Savings (#5) ← DEFAULT
+        ↓
+[Phát hiện mâu thuẫn HOẶC user request verify?]
+        ↓
+Data Integrity (#8) ← OVERRIDE (quality > cost)
+```
+
+**Không bao giờ sửa `chuong/`:**
+- Không bao giờ sửa `chuong/` dựa trên file khác
+- Khi phát hiện mâu thuẫn → báo user & sửa file non-chuong/ tự động
+
+**Khi Nào PHẢI Load `chuong/` (Override #5):**
+- ✅ User yêu cầu "xác minh 100%" / "verify accuracy" (explicit request)
+- ✅ Phát hiện **mâu thuẫn logic giữa files** (arc-summary vs nhan-vat vs chuong/)
 - ✅ Cập nhật/sửa KB → check `chuong/` trước (source of truth)
 - ✅ Phân tích chi tiết Arc → load chapters liên quan làm nền tảng
+- ⚠️ **EXCEPTION:** Các trường hợp trên được phép phá vỡ Giải Pháp #5 vì quality > token cost
 
 **Khi Nào KHÔNG cần Load `chuong/`:**
 - ❌ Chỉ cần overview/tóm tắt → dùng arc-summary + nhan-vat là đủ
